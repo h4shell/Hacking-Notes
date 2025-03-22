@@ -1,9 +1,29 @@
 # Windows Commands
 
+* [Wireless Password](#wireless-password)
 * [Active Directory](#active-directory)
 * [Microsoft Deployment Toolkit](#microsoft-deployment-toolkit)
 * [PowerShell](#powershell)
 * [Enumeration](#enumeration)
+
+
+## Wireless Password
+# Get the saved wifi password from command prompt
+
+```sh
+$ netsh wlan show profiles
+$ netsh wlan show profile NAME key=clear
+```
+
+## You can find the password in here
+Security settings -> Key content : PASSWORD
+
+## OR
+
+## You can export XML file like this
+```sh
+$ netsh wlan export profile folder=c:\ key=clear
+```
 
 
 ## Active Directory
